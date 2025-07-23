@@ -1,13 +1,13 @@
-import mysql.connector
+import mysql
 from mysql.connector import Error
 
 class MySQLConnector:
-    def __init__(self,host,user,password,database):
+    def __init__(self,host,user,password,database, auth_plugin):
         self.host = host
         self.user = user 
         self.password = password
         self.database = database
-        self.auth_plugin = 'mysql_native_password'
+        self.auth_plugin = auth_plugin
         self.connection = None
 
     def create_connection(self, table_query):

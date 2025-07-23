@@ -1,18 +1,18 @@
 # Create paint observation database
-from modules.mysql_connection import MySQLConnector
+from mysql_connection import MySQLConnector
 
 config = {
     'host': 'localhost',
     'user': 'shinleonhardt',
     'password': '12345678',
-    'database': 'paint_observe_db',
+    'database': 'paint_web_db',
     'auth_plugin':'mysql_native_password'
 }
 
 conn = MySQLConnector(config['host'], config['user'],config['password'], config['database'], config['auth_plugin'])
 
 create_table_query = """
-CREATE TABLE IF NOT EXISTS paint_process_logs (
+CREATE TABLE IF NOT EXISTS paint_logs (
     ngay VARCHAR(50), 
     phong_son VARCHAR(50),
     ten_san_pham VARCHAR(50),
