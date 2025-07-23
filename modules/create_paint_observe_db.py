@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS paint_logs (
     thung_son_thu_hoi FLOAT,
     thung_son_tra_ve FLOAT,
     thung_son_tieu_hao FLOAT
-)
+)   
 """
 
 if __name__ == "__main__":
