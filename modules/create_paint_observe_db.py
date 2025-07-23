@@ -40,4 +40,3 @@ CREATE TABLE IF NOT EXISTS paint_logs (
 if __name__ == "__main__":
     conn.create_connection(create_table_query)
 
-# Done
